@@ -11,10 +11,7 @@ class PersonAdmin(admin.ModelAdmin):
 
 @ admin.register(Movie)
 class MovieAdmin(admin.ModelAdmin):
-	list_display = ("title", )
-
-# , 	def get_person_name(self, obj):
-# 		return obj.person.name
+	list_display = ('title', 'description', 'director_name', 'actors_list', 'year' )
 
 
 @ admin.register(Cast)
